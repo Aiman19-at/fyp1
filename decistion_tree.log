@@ -1,0 +1,16 @@
+|--- feature_5 <= 0.50
+|   |--- feature_3 <= 0.50
+|   |   |--- feature_4 <= 0.50
+|   |   |   |--- feature_7 <= 2.50
+|   |   |   |   |--- class: NORMAL
+|   |   |   |--- feature_7 >  2.50
+|   |   |   |   |--- class: HYPERTENSION (Stage-1)
+|   |   |--- feature_4 >  0.50
+|   |   |   |--- class: HYPERTENSION (Stage-1)
+|   |--- feature_3 >  0.50
+|   |   |--- feature_4 <= 0.50
+|   |   |   |--- class: HYPERTENSION (Stage-1)
+|   |   |--- feature_4 >  0.50
+|   |   |   |--- class: HYPERTENSION (Stage-2)
+|--- feature_5 >  0.50
+|   |--- class: HYPERTENSIVE CRISIS
